@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Buscar Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 1.5em;">Buscar temperatura en...</h1>
+        <div id="resultado">
+            <p>Escribe tu ciudad y tu país, el resultado se mostrara abajo</p>
+        </div>
+        <form id="formClima">
+            <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu ciudad" >
+            <select name="pais" id="pais">
+                <option value="" disabled selected>Selecciona un país</option>
+                <option value="ES">España</option>
+                <option value="AR">Argentina</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+                <option value="CO">Colombia</option>
+                <option value="US">Estados Unidos</option>
+            </select>
+            <input type="submit" value="Buscar" id="enviar">
+        </form>
+
+        <div class="footer">
+            mortizp 💙
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
